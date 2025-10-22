@@ -33,7 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
+            this.cbOrdinario = new System.Windows.Forms.RadioButton();
+            this.cbUrgente = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtPrecio
@@ -79,20 +80,33 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cbOrdinario
+            // 
+            this.cbOrdinario.AutoSize = true;
+            this.cbOrdinario.Checked = true;
+            this.cbOrdinario.Location = new System.Drawing.Point(95, 205);
+            this.cbOrdinario.Name = "cbOrdinario";
+            this.cbOrdinario.Size = new System.Drawing.Size(67, 17);
+            this.cbOrdinario.TabIndex = 5;
+            this.cbOrdinario.TabStop = true;
+            this.cbOrdinario.Text = "Ordinario";
+            this.cbOrdinario.UseVisualStyleBackColor = true;
+            // 
             // cbUrgente
             // 
             this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(95, 205);
+            this.cbUrgente.Location = new System.Drawing.Point(187, 205);
             this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(70, 17);
-            this.cbUrgente.TabIndex = 5;
-            this.cbUrgente.Text = "Urgente?";
+            this.cbUrgente.Size = new System.Drawing.Size(63, 17);
+            this.cbUrgente.TabIndex = 6;
+            this.cbUrgente.Text = "Urgente";
             this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(567, 335);
             this.Controls.Add(this.cbUrgente);
+            this.Controls.Add(this.cbOrdinario);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -117,7 +131,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox cbUrgente;
+        private System.Windows.Forms.RadioButton cbOrdinario;
+        private System.Windows.Forms.RadioButton cbUrgente;
     }
 }
 
