@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtTelegrama = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 239);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
+            this.txtPrecio.Location = new System.Drawing.Point(146, 239);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 0;
             // 
-            // richTextBox2
+            // txtTelegrama
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(95, 80);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(262, 118);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "";
+            this.txtTelegrama.Location = new System.Drawing.Point(95, 80);
+            this.txtTelegrama.Name = "txtTelegrama";
+            this.txtTelegrama.Size = new System.Drawing.Size(262, 118);
+            this.txtTelegrama.TabIndex = 1;
+            this.txtTelegrama.Text = "";
             // 
             // label3
             // 
@@ -77,26 +77,27 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Calcular";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox2
+            // cbUrgente
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(95, 205);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Urgente?";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbUrgente.AutoSize = true;
+            this.cbUrgente.Location = new System.Drawing.Point(95, 205);
+            this.cbUrgente.Name = "cbUrgente";
+            this.cbUrgente.Size = new System.Drawing.Size(70, 17);
+            this.cbUrgente.TabIndex = 5;
+            this.cbUrgente.Text = "Urgente?";
+            this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(567, 335);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTelegrama);
+            this.Controls.Add(this.txtPrecio);
             this.Name = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,12 +112,12 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.RichTextBox txtTelegrama;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox cbUrgente;
     }
 }
 
