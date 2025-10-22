@@ -35,14 +35,14 @@ namespace ejercicioTelegrama
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 25;
+                    coste = 3;
                 else
                     coste = 0.5 * numPalabras;
             else
             //Si el telegrama es urgente
             if (tipoTelegrama == 'u')
                 if (numPalabras <= 10)
-                    coste = 5;
+                    coste = 6;
                 else
                     coste = 5 + 0.75 * (numPalabras - 10);
             else
